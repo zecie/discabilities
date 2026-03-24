@@ -1,0 +1,36 @@
+name: DiscAbilities
+version: 1.0.0
+main: com.discabilities.DiscAbilitiesPlugin
+api-version: '1.21'
+
+commands:
+  getdisc:
+    description: Give yourself a music disc
+    usage: /getdisc <disc_name>
+  withdraw:
+    description: Withdraw an equipped disc back to your inventory
+    usage: /withdraw [1|2]
+  getitem:
+    description: Give yourself any Minecraft item
+    usage: /getitem <material> [amount]
+  getenchant:
+    description: Enchant your held item
+    usage: /getenchant <enchantment> [level]
+  getexperience:
+    description: Give yourself experience levels
+    usage: /getexperience <levels>
+  resetcooldowns:
+    description: Reset all disc cooldowns for a player
+    usage: /resetcooldowns [player]
+    permission: discabilities.admin
+  trust:
+    description: Trust a player so your disc abilities don't affect them
+    usage: /trust <player>
+  untrust:
+    description: Untrust a previously trusted player
+    usage: /untrust <player>
+
+permissions:
+  discabilities.admin:
+    description: Access to admin disc commands
+    default: op
